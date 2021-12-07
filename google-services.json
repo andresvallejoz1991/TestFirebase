@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "149131192811",
+    "project_id": "sound-60083",
+    "storage_bucket": "sound-60083.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149131192811:android:8824df6e70f18e0b4dd1ae",
+        "android_client_info": {
+          "package_name": "com.example.firebaseconection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149131192811-9cc06gf6cj1h8dgvc0c4473u1c17kkin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTXvpjvqPwTk0t7ywyey59TXz7MX3xO3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149131192811-9cc06gf6cj1h8dgvc0c4473u1c17kkin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
