@@ -32,11 +32,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
-        android:layout_height="184dp"
-        android:layout_marginStart="17dp"
+        android:layout_width="375dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginEnd="25dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

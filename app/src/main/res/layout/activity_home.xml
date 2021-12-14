@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="410dp"
-        android:layout_height="228dp"
+        android:layout_width="407dp"
+        android:layout_height="303dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
@@ -46,6 +46,26 @@
             android:textSize="20sp" />
 
         <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Apellido"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="#000000" />
+
+        <EditText
             android:id="@+id/edit_direccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +74,8 @@
             android:inputType="textPersonName"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textColorHint="#000000" />
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/edit_telefono"
@@ -68,7 +89,8 @@
             android:singleLine="false"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textColorHint="#000000" />
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/edit_rol"
@@ -79,7 +101,8 @@
             android:inputType="textPersonName"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textColorHint="#000000" />
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -93,8 +116,8 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.869">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.224">
 
         <Button
             android:id="@+id/btnsalir"
@@ -110,8 +133,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="117dp"
-        android:layout_height="108dp"
+        android:layout_width="95dp"
+        android:layout_height="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -119,13 +142,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="302dp"
-        android:layout_height="158dp"
+        android:layout_width="326dp"
+        android:layout_height="234dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
@@ -147,34 +171,18 @@
             android:layout_height="wrap_content"
             android:text="Eliminar" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="409dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
         <Button
             android:id="@+id/btnGPS"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="GPS" />
 
         <Button
             android:id="@+id/btnCamara"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Camara" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

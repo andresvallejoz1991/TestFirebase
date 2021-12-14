@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/drawable/splash_activity.xml" value="0.2203125" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/layout/activity_camara.xml" value="0.1859375" />
-        <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/layout/activity_gps.xml" value="0.2" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/layout/activity_gps.xml" value="0.22" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/layout/activity_home.xml" value="0.2401129943502825" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/layout/activity_photo.xml" value="0.2" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/layout/mylaout.xml" value="0.22" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/FirebaseConection/app/src/main/res/xml/file_path.xml" value="0.2" />
       </map>
     </option>
   </component>

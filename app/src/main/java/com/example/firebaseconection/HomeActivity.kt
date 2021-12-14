@@ -53,7 +53,7 @@ class HomeActivity : AppCompatActivity(){
         }
 
         btnCamara.setOnClickListener{
-            val saltar: Intent = Intent(this,Camara::class.java)
+            val saltar: Intent = Intent(this,Photo::class.java)
             startActivity(saltar)
         }
 
@@ -109,12 +109,15 @@ class HomeActivity : AppCompatActivity(){
 
         btn_guardar.setOnClickListener(){
             db.collection("users").document(email).set(
-                hashMapOf("provider" to provider, "address" to edit_direccion.text.toString(),
+                hashMapOf("provider" to provider,"name" to editName.text.toString(),
+                    "Last_name" to editApellido.text.toString(),"address" to edit_direccion.text.toString(),
                     "phone" to edit_telefono.text.toString(), "rol" to edit_rol.text.toString())
             )
         }
         btn_recuperar.setOnClickListener(){
             db.collection("users").document(email).get().addOnSuccessListener {
+                editName.setText(it.get("Name") as String?)
+                editApellido.setText(it.get("Apellido") as String?)
                 edit_direccion.setText(it.get("address") as String?)
                 edit_telefono.setText(it.get("phone") as String?)
                 edit_rol.setText(it.get("rol") as String?)

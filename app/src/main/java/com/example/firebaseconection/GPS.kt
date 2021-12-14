@@ -3,22 +3,20 @@ package com.example.firebaseconection
 import android.Manifest
 import android.content.Context
 import android.content.Intent
+
 import android.content.pm.PackageManager
 import android.location.Geocoder
-import android.location.Location
+
 import android.location.LocationManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Looper
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.*
-import com.google.firebase.auth.FirebaseAuth
-import io.grpc.InternalChannelz.id
 import kotlinx.android.synthetic.main.activity_gps.*
-import kotlinx.android.synthetic.main.activity_home.*
+
 import java.util.*
 
 class GPS : AppCompatActivity() {
@@ -30,7 +28,13 @@ class GPS : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gps)
 
-
+        // Ahora inicializamos la variable para la para la locacion
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
+        var btnActualizar = findViewById<Button>(R.id.btnAct)
+        btnActualizar.setOnClickListener(){
+            solicitarPermisos()
+            obtenerUltimaUbicacion()
+        }
 
     }
     // 1. Funcion para validar que los permisos esten dando correctamente
